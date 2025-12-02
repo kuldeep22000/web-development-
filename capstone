@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel</title>
+    
+    <STYLE>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                url("https://media.istockphoto.com/id/912294452/photo/tropical-paradise-ayada-island.jpg?s=612x612&w=0&k=20&c=y4L5oTUUfbTSDmSnfP1M1k24m0Qz9-d_wtYFDltaaQE=") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ffb100;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECTION BASIC */
+.section {
+    padding: 50px 50px;
+    background: #f6fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* DESTINATIONS GRID */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+}
+
+/* PACKAGES */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.package-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.package-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.package-card .price {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ff7b00;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 10px;
+    }
+}
+    </STYLE>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Wanderlust</div>
+            <div class="nav-links">
+                <a href="#">Destinations</a>
+                <a href="#">Packages</a>
+                <a href="#">How It Works</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with Wanderlust</h1>
+            <p>Your adventure starts here. Discover breathtaking destinations, curated tours, and unforgettable experiences.</p>
+            <button class="cta-btn">Start Your Journey</button>
+        </div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="section">
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="destinations-grid">
+            <div class="card">
+                <img src="https://www.sunsiyam.com/media/qnfnzgmq/ssiv_general_04.jpg?width=782&height=521&mode=max" alt="">
+                <h3>Maldives</h3>
+                <p>Crystal clear waters and white sandy beaches.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsZLEMRoE7Qkt7kJYpRFZxt-WnJvIOwxWVg&s" alt="">
+                <h3>Paris</h3>
+                <p>The city of lights and romance awaits you</p>
+            </div>
+
+            <div class="card">
+                <img src="https://balidave.com/wp-content/uploads/2022/11/best-hotel-bali.jpeg" alt="">
+                <h3>Bali</h3>
+                <p>Experience the magic of tropical paradise.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/new-york-cityscape_181624-4671.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+                <h3>New York</h3>
+                <p>The city that never sleeps, full of wonders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR PACKAGES -->
+    <section class="section">
+        <h2 class="section-title">Tour Packages</h2>
+
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3>Maldives </h3>
+                <p>Luxury resort, snorkeling, island hopping</p>
+                <span class="price">$1,999</span>
+            </div>
+
+            <div class="package-card">
+                <h3>Paris</h3>
+                <p>Eiffel Tower, Louvre, Seine cruise</p>
+                <span class="price">$1,199</span>
+            </div>
+
+            <div class="package-card">
+                <h3>Bali </h3>
+                <p>Temples, rice terraces, beaches</p>
+                <span class="price">$1,999</span>
+            </div>
+            
+            <div class="package-card">
+                <h3>New York</h3>
+                <p>Washington D.C. and Niagara Falls</p>
+                <span class="price">$1,999</span>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
